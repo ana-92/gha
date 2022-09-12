@@ -51,4 +51,6 @@ jobs:
           path: test.txt
 
       - name: Verify the test.txt file
-        run: cat test.txt
+        run: |
+          echo "This is a test file" > test.txt
+          cat test.txt
